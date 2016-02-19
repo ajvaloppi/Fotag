@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fotag!</title>
+
+    <!--
+    All of your CSS must go in css/fotag.css. Do not add styles to individual elements.
+    All of your CSS must be your own -- you may not use third-party CSS, like Bootstrap.
+    -->
+    <link rel="stylesheet" href="css/fotag.css"/>
+    <style>
+        .marking-button {
+            float:right;
+        }
+        .marking-div-clear {
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+
+<!-- This header can be replaced -->
+<div id="header">
+    <div id="title">
+        <strong class="title">Fotag! </strong><em>Import, organize, and rate your photos!</em>
+    </div>
+    <template id="toolbar">
+        <button class="gridBtn toolbarBtn"><img class="gridBtnImg"></button>
+        <button class="listBtn toolbarBtn"><img class="listBtnImg"></button>
+        <div class="ratingBtns">
+            <img class="ratingBtn1"></img>
+            <img class="ratingBtn2"></img>
+            <img class="ratingBtn3"></img>
+            <img class="ratingBtn4"></img>
+            <img class="ratingBtn5"></img>
+            <img class="removeBtn"></img>
+        </div>
+
+    </template>
+
+    <template id="file-chooser">
+        <input type="file" class="files-input" name="file_results[]" multiple />
+        <output id="list"></output>
+    </template>
+
+</div>
+
+<div id="content">
+    <dialog id="modal" class="modal">
+        <img id="removeModal" class="modalClose" src="glyphs/glyphicons-208-remove-2.png">
+        <img class="imageModal">
+        <div class="imageInfoModal">
+            <div class="imageInfoModalName"></div>
+            <div class="imageInfoModalCaption"></div>
+            <div class="imageInfoModalDate"></div>
+            <div class="imageInfoModalRating">
+                <img class="rating1Modal"></img>
+                <img class="rating2Modal"></img>
+                <img class="rating3Modal"></img>
+                <img class="rating4Modal"></img>
+                <img class="rating5Modal"></img>
+            </div>
+        </div>
+    </dialog>
+    <!--<dialog class="captionModal modal">
+                <img class="removeCaptionModal modalClose" src="glyphs/glyphicons-208-remove-2.png">
+                <input type="text" class="newCaption"> </br>
+                <button class="saveCaption">Save Caption</button>
+            </dialog>-->
+    
+    <div id="app-container">
+    <!--
+         An attachment point to place all of your dynamically created content. Do not remove or
+         rename this div.
+     -->
+    </div>
+    <template id="imageDisplay">
+            <img class="image">
+            <div class="imageInfo">
+                <div class="imageMeta"></div>
+                <div class="rating">
+                    <img class="rating1"></img>
+                    <img class="rating2"></img>
+                    <img class="rating3"></img>
+                    <img class="rating4"></img>
+                    <img class="rating5"></img>
+                    <img class="removeRating"></img>
+                </div>
+            </div>
+            <div class="captionModal modal"></div>
+            
+     </template>
+</div>
+
+<!-- A template for a file chooser, to select multiple files. See FileChooser in view.js. -->
+
+<!-- Keep this here so TAs can run your unit tests -->
+<div id="unit-tests">
+
+    <!-- This button is for marking purposes to test your architecture. Do not remove it-->
+    <button class="marking-button">Mark Me!</button>
+    <div class="marking-div-clear"></div>
+
+    <a href="unit_tests.html">Run Unit Tests</a>
+</div>
+
+<script src="js/ext/underscore.js"></script>
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/fotag.js"></script>
+</body>
+</html>

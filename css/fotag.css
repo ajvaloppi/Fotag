@@ -1,0 +1,116 @@
+/* Put any additional CSS here */
+
+.title{
+	font-size: 32px;
+}
+
+body{
+	color: white;
+	background-color: #608D9C;
+}
+
+#content {
+	margin-top: 200px;
+}
+
+@media screen and (max-width: 1400px){
+	.imageGridView {
+		width: 33%!important;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+	.imageGridView {
+		width: 50%!important;
+	}
+
+}
+
+@media screen and (max-width: 760px){
+	.imageGridView {
+		width: 100%!important;
+	}
+
+}
+
+.imageGridView {
+	width: 25%;
+	text-align: center;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.infoGridView {
+	text-align: center;
+	margin-top: 10px;
+	display: block;
+}
+
+.imageListView {
+	margin: 20px;
+	display: block;
+}
+
+.infoListView {
+	margin: 20px;
+	display: inline-block;
+	position: absolute;
+	margin-top: 50px;
+}
+
+.modalClose {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.modal {
+	padding: 25px;
+}
+
+#header{
+	background-color: #22596B;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	width: 100%;
+	height: 150px;
+	z-index: 100;
+}
+
+.files-input{
+	font-size: 20;
+	padding: 10px;
+	border-radius: 10px;
+	width: 270px;
+	margin: 5px;
+	margin-top: 10px;
+	background-color: #608D9C;
+}
+
+.toolbarBtn{
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 10px;
+	background-color: #608D9C;
+}
+
+.ratingBtns {
+	display: inline-block;
+	width: 160px;
+	height: 30px;
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 10px;
+	background-color: #608D9C;
+}
+
+.imageInfoModal {
+	text-align: center;
+}
+
+.newCaption {
+	width: 300px;
+}
